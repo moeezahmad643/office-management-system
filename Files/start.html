@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <style>
+    *{
+        font-family: system-ui;
+    }
+        .main {
+            display: grid;
+            flex-direction: row;
+            place-items: center;
+
+        }
+
+        .card {
+            height: 200px;
+            width: 500px;
+
+            margin: 30px;
+            padding: 10px;
+            
+            border: 1px solid rgb(162, 162, 162);
+            border-radius: 10px;
+            box-shadow: 3px 3px 20px 5px gray;
+            
+            display: grid;
+            place-items: center;
+
+            cursor: pointer;
+            transition: all 1s;
+        }
+        .card:hover{
+            padding: 20px;
+
+        }
+
+
+        h1 {
+            font-size: 50px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div style="background-color: rgb(87, 87, 255);" class="card" onclick="window.location.href='/CheckHome'">
+            <h1>Host</h1>
+        </div>
+        <div style="background-color: rgb(255, 101, 74);" class="card" onclick="window.location.href='/user'">
+            <h1>User</h1>
+        </div>
+
+    </div>
+</body>
+
+</html>
